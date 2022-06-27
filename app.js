@@ -4,7 +4,7 @@ const express = require('express');
 const { registerRouter } = require('./routes/register.routes')
 
 // Util
-//const { db } = require('')
+const { db } = require('./utils/database.util')
 
 const app = express()
 

@@ -1,4 +1,4 @@
-const { db, DataTypes } = require('../models/register.model')
+const { db, DataTypes } = require('../utils/database.util')
 
 const Register = db.define('register', {
     id: {
@@ -20,7 +20,7 @@ const Register = db.define('register', {
 
     exitTime: {
         type: DataTypes.DATE,
-        allowNull: false
+        allowNull: true
     },
 
     status: {
@@ -30,4 +30,4 @@ const Register = db.define('register', {
     }
 })
 
-Module.exports = { Register };
+module.exports = { Register };
